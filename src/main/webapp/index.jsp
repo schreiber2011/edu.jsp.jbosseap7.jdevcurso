@@ -23,12 +23,21 @@
   Você está na <%= getServletInfo()%>
   <br/>
   <myprefix:my-tag/>
+  <% session.setAttribute("dot", ".");%>
   <script type="text/javascript">
       // var myMtTokenId="{actionBean.orgReqMtTokenId}";
   </script>
   <form action="result.jsp" method="post">
     <label for="nome">Type a name: </label>
     <input type="text" id="nome" name="nome"/>
+    <input type="submit" value="send"/>
+  </form>
+
+  <form action="LoginServlet" method="post">
+    <label for="user">User: </label>
+    <input type="text" id="user" name="user"/>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password">
     <input type="submit" value="send"/>
   </form>
 </body>

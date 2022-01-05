@@ -15,5 +15,8 @@
   <jsp:setProperty name="multiplies" property="*"/>
   <h3>Resultado</h3>
   <jsp:getProperty name="multiplies" property="nome"/>
+  <br/>
+  ${param.nome}${sessionScope.dot}
+
 </body>
 </html>
